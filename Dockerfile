@@ -17,8 +17,9 @@ COPY . .
 
 # Expose the port your Node.js application listens on.
 # Replace 3000 with the actual port your application uses.
-EXPOSE 3000
+EXPOSE 8080
 
 # Define the command to run when the container starts.
 # Replace 'server.js' with the entry point of your Node.js application.
+
 CMD ["node", "app.js"]
