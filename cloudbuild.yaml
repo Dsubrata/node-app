@@ -1,6 +1,4 @@
 steps:
-  -name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy', '--quiet']
-
-options:
-  logging: CLOUD_LOGGING_ONLY
+  # Build the Docker image
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy', '--quiet']
